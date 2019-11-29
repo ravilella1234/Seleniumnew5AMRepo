@@ -41,12 +41,12 @@ public class BaseTest
 	{
 		if(p.getProperty(browser).equals("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\DELL\\Desktop\\Selenium Drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", projectPath+"//drivers//chromedriver.exe");
 			driver=new ChromeDriver();
 		}
 		else if(p.getProperty(browser).equals("firefox"))
 		{
-			System.setProperty("webdriver.gecko.driver", "C:\\Users\\DELL\\Desktop\\Selenium Drivers\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", projectPath+"//drivers//geckodriver.exe");
 			driver=new FirefoxDriver();
 		}
 	}

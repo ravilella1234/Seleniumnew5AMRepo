@@ -19,3 +19,11 @@ Navigated to url :- https://www.amazon.in
 Selected the option :- Books by using the locator :- searchDropdownBox
 Entered the text :- Harry Potter by using the locator :- field-keywords
 Clicked on Element by using the locator :- //div[@class='nav-search-submit nav-sprite']//input[@class='nav-input']
+Initilizing properties files......
+Initilizing properties files......
+Initilizing properties files......
+Launching the Browser :- chrome
+Navigated to url :- https://www.amazon.in
+Selected the option :- Books by using the locator :- searchDropdownBox
+Entered the text :- Harry Potter by using the locator :- field-keywords
+Clicked on Element by using the locator :- //div[@class='nav-search-submit nav-sprite']//input[@class='nav-input']
