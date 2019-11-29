@@ -12,7 +12,7 @@ public class TC_001 extends BaseTest
 {
 	
  
-  @BeforeMethod
+  @BeforeMethod(groups = {"regression","sanity"})
   @Parameters("browser")
   public void startProcess(String btype) throws Exception 
   {
@@ -28,7 +28,7 @@ public class TC_001 extends BaseTest
   }
   
   
-  @Test
+  @Test(groups = {"regression","sanity"})
   public void amazon()
   {
 	    selectOption("amazondropdown_id","amazondropdowntvalue");
@@ -42,7 +42,7 @@ public class TC_001 extends BaseTest
   }
 
 
-  @AfterMethod
+  @AfterMethod(groups = {"regression","sanity"})
   public void endProcess() 
   {
 	  report.endTest(test);

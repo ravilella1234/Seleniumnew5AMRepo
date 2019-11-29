@@ -15,7 +15,7 @@ public class RadioButton1 extends BaseTest
 {
 
 	
-	@BeforeMethod
+	@BeforeMethod(groups = {"regression","smoke"})
 	@Parameters("browser")
 	  public void beforeMethod(String btype) throws Exception 
 	  {
@@ -25,7 +25,7 @@ public class RadioButton1 extends BaseTest
 	  }
 	
 	
-	@Test
+	@Test(groups = {"regression","smoke"})
 	public void RadioButtonTest()
 	{
 		WebElement radio=driver.findElement(By.xpath("(//td[@class='table5'])[2]"));
@@ -37,7 +37,7 @@ public class RadioButton1 extends BaseTest
 	}
  
 
-  @AfterMethod
+  @AfterMethod(groups = {"regression","smoke"})
   public void afterMethod() 
   {
 	 driver.quit();
