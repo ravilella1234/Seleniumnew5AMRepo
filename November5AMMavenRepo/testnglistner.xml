@@ -4,7 +4,7 @@
   
   	<listeners>
 		<listener class-name="com.listners.Listener"></listener> 
-		<!--  <listener class-name="com.testng.Ecommerce.listners.RetryListener"></listener>  -->
+		<listener class-name="com.listners.RetryListener"></listener>
 	</listeners>
   
   <test thread-count="5" name="Test">
