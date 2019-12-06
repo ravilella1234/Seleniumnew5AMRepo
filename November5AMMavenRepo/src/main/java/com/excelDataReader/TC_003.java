@@ -7,6 +7,7 @@ import java.util.Hashtable;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.SkipException;
 import org.testng.annotations.DataProvider;
 
 public class TC_003 
@@ -16,7 +17,9 @@ public class TC_003
   @Test(dataProvider = "dp")
   public void f(Hashtable<String, String> data) 
   {
-	  if(data.get("RunMode").equals("y"))
+	  if(data.get("RunMode").equals("n"))
+		  throw new SkipException("Run mode set to no...");
+	  
 		  System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//drivers//chromedriver.exe"); 
 	  		driver=new ChromeDriver();
 			driver.manage().window().maximize(); 

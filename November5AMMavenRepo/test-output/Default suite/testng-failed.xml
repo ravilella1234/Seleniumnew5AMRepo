@@ -3,14 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testng.TestDependency">
+      <class name="com.excelDataReader.TC_004">
         <methods>
-          <include name="white"/>
-          <include name="blue"/>
-          <include name="green"/>
-          <include name="orange"/>
+          <include name="startProcess"/>
+          <include name="f" invocation-numbers="1"/>
         </methods>
-      </class> <!-- com.testng.TestDependency -->
+      </class> <!-- com.excelDataReader.TC_004 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

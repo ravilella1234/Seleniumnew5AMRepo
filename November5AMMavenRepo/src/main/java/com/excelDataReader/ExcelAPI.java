@@ -28,6 +28,7 @@ public class ExcelAPI
 	
 	public ExcelAPI(String xfilePath) throws Exception 
 	{
+		System.out.println("Excel has initilized......");
 		this.xfilePath=xfilePath;
 		fis=new FileInputStream(xfilePath);
 		workbook=new XSSFWorkbook(fis);

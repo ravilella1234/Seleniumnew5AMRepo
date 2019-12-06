@@ -10,7 +10,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.BeforeTest;
 
+import com.excelDataReader.ExcelAPI;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
@@ -24,8 +26,16 @@ public class BaseTest
 	public static ExtentReports report= ExtentManager.getInstance();
 	public static ExtentTest test;
 	public static String screenshotFileName=null;
+	public static ExcelAPI xls;
 	
-	
+
+	@BeforeTest
+	public void startProcess() throws Exception
+	{
+		System.out.println("BeforeTest Executed.......");
+		init();
+		xls=new ExcelAPI(p.getProperty("suiteA"));
+	}
 	
 	static
 	{
