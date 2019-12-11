@@ -19,20 +19,26 @@ public class POM_001 extends BaseTest
 	  navigateUrl("automationurl");
   }
   
-  @Test
+  @Test(priority = 1)
   public void loginTest() 
   {
 	  LoginPage page=new LoginPage(driver);
 	  page.login();
-	  Assert.assertEquals(page.getLoginError(), "Authentication failed.");
-	  
-	  
+	  Assert.assertEquals(page.getLoginError(), "Authentication failed.");  
+  }
+  
+  
+  @Test(priority = 2)
+  public void registration() throws InterruptedException
+  {
+	  RegistrationPage reg=new RegistrationPage(driver);
+	  reg.customerRegistration();
   }
 
   @AfterTest
   public void endProcess()
   {
-	  
+	  //driver.quit();
   }
 
 }

@@ -3,6 +3,8 @@ package com.project;
 import java.io.FileInputStream;
 import java.util.Date;
 import java.util.Properties;
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
@@ -10,6 +12,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
 
 import com.excelDataReader.ExcelAPI;
@@ -78,6 +83,7 @@ public class BaseTest
 		//driver.get(p.getProperty(url));
 		driver.navigate().to(p.getProperty(url));
 		driver.manage().window().maximize();
+		//driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 	
 	public static void clickElement(String locatorKey) 
@@ -120,6 +126,25 @@ public class BaseTest
 		
 		return element;
 				
+	}
+	
+	
+	public static void waitForElement(WebElement locator,int seconds) 
+	{
+		WebDriverWait wait=new WebDriverWait(driver, seconds);
+		wait.until(ExpectedConditions.elementToBeClickable(locator));
+	}
+	
+	public int randomNumber() 
+	{
+		Random r=new Random();
+		return r.nextInt(55555);
+	}
+	
+	public void selectItem(WebElement element, int itemIndex)
+	{
+		Select s=new Select(element);
+		s.selectByIndex(itemIndex);
 	}
 	
 }

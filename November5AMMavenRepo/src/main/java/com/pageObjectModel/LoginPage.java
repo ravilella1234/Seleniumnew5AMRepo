@@ -7,13 +7,14 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage 
 {
-	
+	//loginPage Properties
 	@FindBy(linkText="Sign in")public WebElement signIn;
 	@FindBy(id="email")public WebElement customerEmail;
 	@FindBy(id="passwd")public WebElement customerPassword;
 	@FindBy(id="SubmitLogin")public WebElement submitLogin;
 	@FindBy(xpath="//li[contains(text(),'Authentication failed.')]")public WebElement getloginErrorMessage;
 	
+
 	
 	public LoginPage(WebDriver driver) 
 	{
