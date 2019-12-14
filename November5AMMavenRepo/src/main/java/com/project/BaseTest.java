@@ -4,7 +4,6 @@ import java.io.FileInputStream;
 import java.util.Date;
 import java.util.Properties;
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
@@ -28,6 +27,8 @@ public class BaseTest
 	static FileInputStream fis;
 	public static Properties p;
 	public static Properties or;
+	public static Properties e;
+	public static Properties propenv;
 	public static ExtentReports report= ExtentManager.getInstance();
 	public static ExtentTest test;
 	public static String screenshotFileName=null;
@@ -60,6 +61,19 @@ public class BaseTest
 		or.load(fis);
 		
 		PropertyConfigurator.configure(projectPath+"//log4j.properties");
+		
+		
+		fis=new FileInputStream(projectPath+"//environment.properties");
+		e=new Properties();
+		e.load(fis);
+		String val = e.getProperty("env");
+		System.out.println(val);
+		
+		fis=new FileInputStream(projectPath+"//"+val+".properties");
+		propenv=new Properties();
+		propenv.load(fis);
+		System.out.println(propenv.getProperty("amazonurl"));
+		
 		
 	}
 	
