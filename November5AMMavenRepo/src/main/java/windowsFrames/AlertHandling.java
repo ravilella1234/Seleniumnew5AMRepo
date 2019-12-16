@@ -38,7 +38,6 @@ WebDriver driver;
       
 	  Alert al = driver.switchTo().alert();
 	  
-	  
 	  System.out.println(al.getText());
 	  String expval="Do you really want to delete this Customer?";
 	  Assert.assertEquals(al.getText(), expval);
