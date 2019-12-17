@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.pageObjectModel.POM_001">
+      <class name="windowsFrames.FileUpload">
         <methods>
-          <include name="startProcess"/>
-          <include name="startprocess"/>
-          <include name="endProcess"/>
-          <include name="registration"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="fileupload"/>
         </methods>
-      </class> <!-- com.pageObjectModel.POM_001 -->
+      </class> <!-- windowsFrames.FileUpload -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

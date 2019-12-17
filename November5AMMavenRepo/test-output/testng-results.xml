@@ -1,33 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35962" started-at="2019-12-14T21:28:43 IST" finished-at="2019-12-14T21:29:19 IST">
+  <suite name="Default suite" duration-ms="20417" started-at="2019-12-17T08:39:37 IST" finished-at="2019-12-17T08:39:58 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="35962" started-at="2019-12-14T21:28:43 IST" finished-at="2019-12-14T21:29:19 IST">
-      <class name="com.pageObjectModel.POM_001">
-        <test-method status="PASS" signature="startProcess()[pri:0, instance:com.pageObjectModel.POM_001@5427c60c]" name="startProcess" is-config="true" duration-ms="1962" started-at="2019-12-14T21:28:43 IST" finished-at="2019-12-14T21:28:45 IST">
+    <test name="Default test" duration-ms="20417" started-at="2019-12-17T08:39:37 IST" finished-at="2019-12-17T08:39:58 IST">
+      <class name="actionsAndJavaScriptExecutors.MouseOperations">
+        <test-method status="PASS" signature="setup()[pri:0, instance:actionsAndJavaScriptExecutors.MouseOperations@5d76b067]" name="setup" is-config="true" duration-ms="12125" started-at="2019-12-17T08:39:38 IST" finished-at="2019-12-17T08:39:50 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startProcess -->
-        <test-method status="PASS" signature="startprocess()[pri:0, instance:com.pageObjectModel.POM_001@5427c60c]" name="startprocess" is-config="true" duration-ms="21032" started-at="2019-12-14T21:28:45 IST" depends-on-methods="com.project.BaseTest.startProcess" finished-at="2019-12-14T21:29:06 IST">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="autoSuggestion()[pri:7, instance:actionsAndJavaScriptExecutors.MouseOperations@5d76b067]" name="autoSuggestion" duration-ms="8177" started-at="2019-12-17T08:39:50 IST" finished-at="2019-12-17T08:39:58 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startprocess -->
-        <test-method status="PASS" signature="loginTest()[pri:1, instance:com.pageObjectModel.POM_001@5427c60c]" name="loginTest" duration-ms="4808" started-at="2019-12-14T21:29:06 IST" finished-at="2019-12-14T21:29:11 IST">
+        </test-method> <!-- autoSuggestion -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actionsAndJavaScriptExecutors.MouseOperations@5d76b067]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-12-17T08:39:58 IST" finished-at="2019-12-17T08:39:58 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="registration()[pri:2, instance:com.pageObjectModel.POM_001@5427c60c]" name="registration" duration-ms="8031" started-at="2019-12-14T21:29:11 IST" finished-at="2019-12-14T21:29:19 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registration -->
-        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.pageObjectModel.POM_001@5427c60c]" name="endProcess" is-config="true" duration-ms="1" started-at="2019-12-14T21:29:19 IST" finished-at="2019-12-14T21:29:19 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endProcess -->
-      </class> <!-- com.pageObjectModel.POM_001 -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- actionsAndJavaScriptExecutors.MouseOperations -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
