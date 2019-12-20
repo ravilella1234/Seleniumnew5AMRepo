@@ -79,12 +79,12 @@ public class BaseTest
 	
 	public static void launch(String browser)
 	{
-		if(p.getProperty(browser).equals("chrome"))
+		if(browser.equals("chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver", projectPath+"//drivers//chromedriver.exe");
 			driver=new ChromeDriver();
 		}
-		else if(p.getProperty(browser).equals("firefox"))
+		else if(browser.equals("firefox"))
 		{
 			System.setProperty("webdriver.gecko.driver", projectPath+"//drivers//geckodriver.exe");
 			driver=new FirefoxDriver();

@@ -16,7 +16,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class ExcelAPI 
 {
 
-	public FileInputStream fis=null;
+	public FileInputStream fis1=null;
 	public FileOutputStream fos=null;
 	public XSSFWorkbook workbook=null;
 	public XSSFSheet sheet=null;
@@ -30,9 +30,9 @@ public class ExcelAPI
 	{
 		System.out.println("Excel has initilized......");
 		this.xfilePath=xfilePath;
-		fis=new FileInputStream(xfilePath);
-		workbook=new XSSFWorkbook(fis);
-		fis.close();
+		fis1=new FileInputStream(xfilePath);
+		workbook=new XSSFWorkbook(fis1);
+		fis1.close();
 	}
 
 

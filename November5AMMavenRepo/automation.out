@@ -6,3 +6,21 @@ Entered the text :- Harry Potter by using the locator :- field-keywords
 Clicked on Element by using the locator :- //div[@class='nav-search-submit nav-sprite']//input[@class='nav-input']
 Retrying test amazon with status FAILURE for the 1 time(s).
 Retrying test amazon with status FAILURE for the 2 time(s).
+Initilizing properties files......
+Launching the Browser :- chrome
+Navigated to url :- https://www.amazon.in
+Selected the option :- Books by using the locator :- searchDropdownBox
+Entered the text :- Harry Potter by using the locator :- field-keywords
+Clicked on Element by using the locator :- //div[@class='nav-search-submit nav-sprite']//input[@class='nav-input']
+Initilizing properties files......
+Launching the Browser :- chrome
+Navigated to url :- https://www.amazon.in
+Selected the option :- Books by using the locator :- searchDropdownBox
+Entered the text :- Harry Potter by using the locator :- field-keywords
+Clicked on Element by using the locator :- //div[@class='nav-search-submit nav-sprite']//input[@class='nav-input']
+Initilizing properties files......
+Launching the Browser :- chrome
+Navigated to url :- https://www.amazon.in
+Selected the option :- Books by using the locator :- searchDropdownBox
+Entered the text :- Harry Potter by using the locator :- field-keywords
+Clicked on Element by using the locator :- //div[@class='nav-search-submit nav-sprite']//input[@class='nav-input']
